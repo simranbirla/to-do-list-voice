@@ -1,6 +1,7 @@
 import React from "react";
 import SearchBox from "./SearchBox";
 import RenderItems from "./RenderItems";
+import Speech from "./Speech";
 
 class App extends React.Component {
   state = { thingsList: [] };
@@ -15,6 +16,7 @@ class App extends React.Component {
         <div style={{ backgroundColor: "#efefef" }}>
           <h1 style={{ textAlign: "center", fontSize: "3em" }}>TO DO LIST</h1>
         </div>
+        <Speech />
         <SearchBox onSubmitText={this.onSubmitText} />
         <RenderItems thingsList={this.state.thingsList} />
       </>
