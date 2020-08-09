@@ -10,13 +10,17 @@ class App extends React.Component {
     this.setState({ thingsList: [...this.state.thingsList, e] });
   };
 
+  onSpeechText = (e) => {
+    this.setState({ thingsList: [...this.state.thingsList, e] });
+  };
+
   render() {
     return (
       <>
         <div style={{ backgroundColor: "#efefef" }}>
           <h1 style={{ textAlign: "center", fontSize: "3em" }}>TO DO LIST</h1>
         </div>
-        <Speech />
+        <Speech onSpeech={this.onSpeechText} />
         <SearchBox onSubmitText={this.onSubmitText} />
         <RenderItems thingsList={this.state.thingsList} />
       </>

@@ -5,15 +5,14 @@ const SpeechRecognition =
 const recognition = new SpeechRecognition();
 
 class Speech extends React.Component {
+  state = { speech: "" };
   onSpeechClick = () => {
     recognition.start();
     recognition.onresult = (e) => {
-      console.log(e.results);
+      console.log(e.results[0][0].transcript);
+      this.setState({ speech: e.results[0][0].transcript });
+      this.props.onSpeech(this.state.speech);
     };
-  };
-
-  onEnd = () => {
-    recognition.stop();
   };
 
   render() {
@@ -24,7 +23,6 @@ class Speech extends React.Component {
           microphone
           <i className="fas fa-microphone"></i>
         </button>
-        <button onClick={this.onEnd}>End</button>
       </div>
     );
   }
