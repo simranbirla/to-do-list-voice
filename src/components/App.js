@@ -1,8 +1,8 @@
 import React from "react";
-import SeachBox from "./SearchBox";
+import SearchBox from "./SearchBox";
 
 class App extends React.Component {
-  state={thingsList=[]}
+  state = { thingsList: [] };
 
   onSubmitText = (e) => {
     console.log(e);
@@ -14,7 +14,7 @@ class App extends React.Component {
         <div style={{ backgroundColor: "#efefef" }}>
           <h1 style={{ textAlign: "center", fontSize: "3em" }}>TO DO LIST</h1>
         </div>
-        <SeachBox onSubmitText={this.onSubmitText} />
+        <SearchBox onSubmitText={this.onSubmitText} />
       </>
     );
   }

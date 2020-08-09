@@ -15,7 +15,6 @@ class SearchBox extends React.Component {
   };
 
   render() {
-    console.log(this.state.thingsList);
     return (
       <div
         style={{
