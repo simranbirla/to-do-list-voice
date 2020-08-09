@@ -1,0 +1,38 @@
+.search-bar {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.input {
+  height: 30px;
+  width: 200px;
+  padding: 10px;
+  border-radius: 5px;
+  border: none;
+  background-color: gray;
+  font-size: 1.3em;
+}
+
+.btn {
+  cursor: pointer;
+  height: 50px;
+  width: 90px;
+  padding: 5px;
+  border-radius: 20px;
+  background-color: lavender;
+  font-weight: bold;
+  border: none;
+}
+
+.thing-container {
+  background-color: lightblue;
+  margin: 10px 0;
+  border-radius: 20px;
+  border: 1px solid aqua;
+  box-shadow: 0 0 10px cadetblue;
+  text-align: center;
+  color: darkslategrey;
+  font-weight: bold;
+  font-size: 1.3em;
+}

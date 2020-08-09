@@ -1,4 +1,5 @@
 import React from "react";
+import "./SearchBox.css";
 
 class SearchBox extends React.Component {
   state = { things: "" };
@@ -16,37 +17,15 @@ class SearchBox extends React.Component {
 
   render() {
     return (
-      <div
-        style={{
-          display: "flex",
-          justifyContent: "center",
-          alignContent: "center",
-        }}
-      >
+      <div className="search-bar">
         <form onSubmit={this.onSubmitText}>
           <input
             onChange={this.inputChange}
             type="text"
             placeholder="Enter things to do"
-            style={{
-              height: "30px",
-              width: "200px",
-              padding: "10px",
-              borderRadius: "5px",
-            }}
+            className="input"
           />
-          <button
-            type="submit"
-            style={{
-              height: "50px",
-              width: "90px",
-              padding: "10px",
-              borderRadius: "5px",
-              backgroundColor: "#fef333",
-              fontWeight: "bold",
-              cursor: "pointer",
-            }}
-          >
+          <button type="submit" className="submit btn">
             Add
           </button>
         </form>
