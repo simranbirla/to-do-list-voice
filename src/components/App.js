@@ -25,7 +25,7 @@ class App extends React.Component {
   render() {
     return (
       <>
-        <div style={{ backgroundColor: "#efefef" }}>
+        <div style={{ backgroundColor: "#ffc1f3" }}>
           <h1 style={{ textAlign: "center", fontSize: "3em" }}>TO DO LIST</h1>
         </div>
         <Speech onSpeech={this.onSpeechText} />

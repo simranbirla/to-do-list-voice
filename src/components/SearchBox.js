@@ -3,12 +3,13 @@ import "./Style.css";
 
 class SearchBox extends React.Component {
   state = { things: "" };
-
+  inputRef = React.createRef();
   onSubmitText = (e) => {
     e.preventDefault();
     if (this.state.things) {
       this.props.onSubmitText(this.state.things);
     }
+    this.setState({ things: "" });
   };
 
   inputChange = (e) => {

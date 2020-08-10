@@ -12,7 +12,12 @@ class RenderItems extends Component {
         <div className="thing-container" key={index}>
           <p className="thing">
             <span className="span">{index + 1}.</span> {thing}
-            <button onClick={() => this.deleteItem(index)}>X</button>
+            <button
+              onClick={() => this.deleteItem(index)}
+              className="delete-btn"
+            >
+              X
+            </button>
           </p>
         </div>
       );

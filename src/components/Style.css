@@ -29,14 +29,45 @@ form {
   font-size: 20px;
 }
 
+.btn:focus,
+.btn:active {
+  border: none;
+}
+
 .thing-container {
-  background-color: lightblue;
+  background-color: #cffffe;
   margin: 10px 0;
-  border-radius: 20px;
-  border: 1px solid aqua;
-  box-shadow: 0 0 10px cadetblue;
+  border-radius: 5px;
+  box-shadow: 0 0 10px rgba(222, 234, 235, 0.781);
   text-align: center;
   color: darkslategrey;
   font-weight: bold;
   font-size: 1.3em;
+  border-left: 15px solid yellowgreen;
+  padding: 5px;
+}
+
+.thing-container .delete-btn {
+  float: right;
+  line-height: 40px;
+  border: none;
+  background-color: red;
+  cursor: pointer;
+  padding: 0 10px;
+  font-size: 20px;
+  font-weight: bold;
+}
+
+.microphone {
+  height: 50px;
+  font-size: 30px;
+}
+
+.microphone button {
+  height: 100%;
+  width: 100px;
+  background-color: transparent;
+  border: none;
+  color: black;
+  font-size: 40px;
 }
