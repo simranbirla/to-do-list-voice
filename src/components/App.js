@@ -15,7 +15,6 @@ class App extends React.Component {
   };
 
   deleteItem = (i) => {
-    console.log(i);
     const filtered_list = this.state.thingsList.filter((thing, index) => {
       return index !== i;
     });

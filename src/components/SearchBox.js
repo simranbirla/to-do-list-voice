@@ -4,12 +4,14 @@ import "./Style.css";
 class SearchBox extends React.Component {
   state = { things: "" };
   inputRef = React.createRef();
+
   onSubmitText = (e) => {
     e.preventDefault();
     if (this.state.things) {
       this.props.onSubmitText(this.state.things);
     }
     this.setState({ things: "" });
+    this.inputRef.current.value = "";
   };
 
   inputChange = (e) => {
@@ -25,6 +27,7 @@ class SearchBox extends React.Component {
             type="text"
             placeholder="Enter things to do"
             className="input"
+            ref={this.inputRef}
           />
           <button type="submit" className="submit btn">
             Add
