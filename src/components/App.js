@@ -14,6 +14,10 @@ class App extends React.Component {
     this.setState({ thingsList: [...this.state.thingsList, e] });
   };
 
+  deleteItem = (i) => {
+    console.log(i);
+  };
+
   render() {
     return (
       <>
@@ -22,7 +26,10 @@ class App extends React.Component {
         </div>
         <Speech onSpeech={this.onSpeechText} />
         <SearchBox onSubmitText={this.onSubmitText} />
-        <RenderItems thingsList={this.state.thingsList} />
+        <RenderItems
+          thingsList={this.state.thingsList}
+          deleteItem={this.deleteItem}
+        />
       </>
     );
   }

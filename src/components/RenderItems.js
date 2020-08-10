@@ -3,7 +3,7 @@ import "./SearchBox.css";
 
 class RenderItems extends Component {
   deleteItem = (index) => {
-    console.log(index);
+    this.props.deleteItem(index);
   };
 
   renderList = () => {
