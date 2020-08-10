@@ -1,5 +1,5 @@
 import React from "react";
-import "./SearchBox.css";
+import "./Style.css";
 
 class SearchBox extends React.Component {
   state = { things: "" };

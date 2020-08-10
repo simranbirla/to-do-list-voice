@@ -1,5 +1,5 @@
 import React, { Component } from "react";
-import "./SearchBox.css";
+import "./Style.css";
 
 class RenderItems extends Component {
   deleteItem = (index) => {
