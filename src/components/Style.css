@@ -31,7 +31,11 @@ form {
 
 .btn:focus,
 .btn:active {
-  border: none;
+  outline: none;
+}
+
+.input:focus {
+  outline: solid skyblue;
 }
 
 .thing-container {
