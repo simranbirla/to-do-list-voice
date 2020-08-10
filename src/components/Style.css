@@ -3,26 +3,30 @@
   justify-content: center;
   align-items: center;
 }
+form {
+  width: 100%;
+}
 
 .input {
   height: 30px;
-  width: 200px;
+  width: 70%;
   padding: 10px;
   border-radius: 5px;
   border: none;
-  background-color: gray;
+  background-color: #f9f7d9;
   font-size: 1.3em;
 }
 
 .btn {
   cursor: pointer;
-  height: 50px;
-  width: 90px;
-  padding: 5px;
-  border-radius: 20px;
+  height: 45px;
+  width: 25%;
+  border-radius: 5px;
   background-color: lavender;
   font-weight: bold;
   border: none;
+  margin-left: 10px;
+  font-size: 20px;
 }
 
 .thing-container {
