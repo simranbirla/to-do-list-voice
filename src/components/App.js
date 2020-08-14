@@ -21,6 +21,20 @@ class App extends React.Component {
     this.setState({ thingsList: filtered_list });
   };
 
+  localStores = () => {
+    localStorage.setItem("thingsList", JSON.stringify(this.state.thingsList));
+  };
+
+  componentDidUpdate() {
+    this.localStores();
+  }
+
+  componentDidMount() {
+    this.setState({
+      thingsList: JSON.parse(localStorage.getItem("thingsList")),
+    });
+  }
+
   render() {
     return (
       <>
