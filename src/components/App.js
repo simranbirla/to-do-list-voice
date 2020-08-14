@@ -30,9 +30,11 @@ class App extends React.Component {
   }
 
   componentDidMount() {
-    this.setState({
-      thingsList: JSON.parse(localStorage.getItem("thingsList")),
-    });
+    if (localStorage.getItem("thingsList")) {
+      this.setState({
+        thingsList: JSON.parse(localStorage.getItem("thingsList")),
+      });
+    }
   }
 
   render() {
