@@ -40,11 +40,12 @@ class App extends React.Component {
   render() {
     return (
       <>
-        <div style={{ backgroundColor: "#ffc1f3" }}>
+        <div>
           <h1 style={{ textAlign: "center", fontSize: "3em" }}>TO DO LIST</h1>
         </div>
-        <Speech onSpeech={this.onSpeechText} />
+
         <SearchBox onSubmitText={this.onSubmitText} />
+        <Speech onSpeech={this.onSpeechText} />
         <RenderItems
           thingsList={this.state.thingsList}
           deleteItem={this.deleteItem}

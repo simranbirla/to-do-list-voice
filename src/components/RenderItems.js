@@ -1,5 +1,5 @@
 import React, { Component } from "react";
-import "./Style.css";
+import "../Style/Style.css";
 
 class RenderItems extends Component {
   deleteItem = (index) => {
@@ -25,7 +25,7 @@ class RenderItems extends Component {
   };
 
   render() {
-    return <div>{this.renderList()}</div>;
+    return <div className="things">{this.renderList()}</div>;
   }
 }
 

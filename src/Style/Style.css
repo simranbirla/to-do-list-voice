@@ -5,66 +5,81 @@
 }
 form {
   width: 100%;
+  display: flex;
+  justify-content: center;
 }
 
 .input {
-  height: 50px;
-  width: 70%;
+  height: 55px;
+  width: 60%;
+  margin: 10px 20px;
   padding: 10px;
   border-radius: 5px;
-  border: none;
-  background-color: #f9f7d9;
+  border: 2px solid #ffab0f;
+  background-color: #f4fa89;
   font-size: 1.3em;
 }
 
 .btn {
   cursor: pointer;
-  height: 45px;
+  height: 50px;
   width: 25%;
   border-radius: 5px;
-  background-color: lavender;
+  background-color: #f5b942;
   font-weight: bold;
   border: none;
-  margin-left: 10px;
+  margin: 10px 20px;
   font-size: 20px;
+  box-shadow: 0 5px rgba(143, 95, 0, 0.7);
 }
 
 .btn:focus,
-.btn:active {
+.btn:active,
+.input:focus {
   outline: none;
 }
 
-.input:focus {
-  outline: solid skyblue;
+.btn:active {
+  box-shadow: none;
+  position: relative;
+  top: 5px;
 }
 
 .thing-container {
-  background-color: #cffffe;
-  margin: 10px 0;
+  background: rgb(240, 207, 177);
+  background: linear-gradient(
+    90deg,
+    rgba(240, 207, 177, 1) 15%,
+    rgba(253, 168, 99, 1) 56%,
+    rgba(239, 144, 0, 1) 98%
+  );
+  width: 90%;
+  margin: 10px auto;
   border-radius: 5px;
-  box-shadow: 0 0 10px rgba(222, 234, 235, 0.781);
   text-align: center;
   color: darkslategrey;
   font-weight: bold;
   font-size: 1.3em;
-  border-left: 15px solid yellowgreen;
+  border-left: 10px solid yellowgreen;
   padding: 5px;
 }
 
 .thing-container .delete-btn {
   float: right;
-  line-height: 40px;
   border: none;
   background-color: red;
   cursor: pointer;
-  padding: 0 10px;
+  padding: 5px 10px;
   font-size: 20px;
   font-weight: bold;
+  margin: auto 10px;
 }
 
 .microphone {
   height: 50px;
   font-size: 30px;
+  margin: 10px auto;
+  width: 100px;
 }
 
 .microphone button {
@@ -74,4 +89,5 @@ form {
   border: none;
   color: black;
   font-size: 40px;
+  margin: 10px auto;
 }

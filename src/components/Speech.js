@@ -1,5 +1,5 @@
 import React from "react";
-import "./Style.css";
+import "../Style/Style.css";
 
 const SpeechRecognition =
   window.SpeechRecognition || window.webkitSpeechRecognition;
@@ -19,7 +19,6 @@ class Speech extends React.Component {
   render() {
     return (
       <div className="microphone">
-        Click to Speak
         <button style={{ cursor: "pointer" }} onClick={this.onSpeechClick}>
           <i className="fas fa-microphone"></i>
         </button>
